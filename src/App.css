@@ -1,0 +1,53 @@
+.App {
+  text-align: center;
+}
+
+.Plane-pic {
+  height: 20vmin;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 5s linear;
+    }
+  }
+@media (prefers-reduced-motion: no-preference) {
+  .Plane-pic {
+    animation: Plain-pic-flight infinite 5s linear;
+    }
+  }  
+
+
+.App-header {
+  background-color: white;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: black;
+}
+
+.App-link {
+  color: white;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0);
+  }
+  to {
+    transform: rotate(0);
+  }
+}
+@keyframes Plain-pic-flight {
+  0%   {left:0px; top:0px; transform: scale(100%); opacity: 0%; transform: rotate(45deg)}
+  50%  {left:200px; top:0px; transform: scale(150%); opacity: 100%; transform: rotate(45deg)}
+  100% {left:0px; top:0px; transform: scale(100%); opacity: 0%; transform: rotate(45deg)}
+}
